@@ -13,6 +13,11 @@ function App() {
     try {
       setError(null);      
       const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${API_KEY}`);
+      
+      if (response.status !== 200) {
+        setError('Weather data not found.');
+        return;
+      }
       setWeatherData(response.data);
     } catch (error) {
       setError('An error occurred while fetching weather data.');
