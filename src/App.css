@@ -103,10 +103,10 @@ input{
 
 
 
-.user-profile {
+.weather-info-card {
   /* margin-top: 20px; */
   padding: 20px;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -116,11 +116,11 @@ input{
   margin-bottom: 20px;
 }
 
-.user-profile p{
+.weather-info-card p{
   margin: 5px;
 }
 
-.usrnm{
+.city-name{
   margin: 8px;
 }
 
@@ -147,7 +147,7 @@ input{
   bottom: 0;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   width: 100%;
 }
 

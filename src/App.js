@@ -57,12 +57,12 @@ function App() {
         </div>
         {error && <p className="error">{error}</p>}
         {weatherData && (
-          <div className="user-profile" >
+          <div className="weather-info-card" >
             <div className='x'>
               <button onClick={close}>X</button>
             </div>
             <img src={`https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`} alt="User Avatar" />
-            <h2 className='usrnm'>{weatherData.name}</h2>
+            <h2 className='city-name'>{weatherData.name}</h2>
             <div className='text'>
               {/* <h2 className='usrnm'>{weatherData.name}</h2> */}
               <p>Temperature: {weatherData.main.temp}°C</p>
